@@ -5,7 +5,6 @@ $tpl = new TemplatePower( "./tpl/index.tpl.html" );
 $tpl->prepare();
 
 include'connectDB.php';
-var_dump($_REQUEST);
 
 if(!empty($_REQUEST['search'])){
 

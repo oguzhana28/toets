@@ -14,6 +14,6 @@ VALUES ('".$_POST["schoenmerk"]."')";
   $result = mysqli_query($connection, $query);
 
 }
-$tpl->gotoBlock( "_ROOT" );
+
 $tpl->printToScreen();
 ?>
