@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../toets/style.css">
+</head>
+
+<body>
+    <form method="GET" action="search.php">
+        <input type="text" name="search" placeholder="Search..." />
+        <input type="submit" value="Search" />
+    </form>
+    <p><a href="create.php">create</a></p>
+
+    <div class="datagrid">
+        <table>
+            <thead>
+                <th>merk</th>
+                <!-- START BLOCK : schoenmerk -->
+                <tr>
+
+                    <td>{schoenmerk}</td>
+                    <td>
+                        <select>
+                            <!-- START BLOCK : size -->
+                            <option>{size}</option>
+                            <!-- END BLOCK : size -->
+                        </select>
+                    </td>
+                    <td><a href="edit.php?id={id}"> edit</a></td>
+
+                    <td><a href="delete.php?id={id}"> x </a></td>
+
+
+                </tr>
+                <!-- END BLOCK : schoenmerk -->
+            </thead>
+        </table>
+    </div>
+
+</body>
+
+</html>
